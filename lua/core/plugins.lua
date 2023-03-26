@@ -17,7 +17,16 @@ local ensure_packer = function()
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
-    
+    use {
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+      "neovim/nvim-lspconfig",
+    }
+    -- completion
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'L3MON4D3/LuaSnip'
+
      -- Automatically set up your configuration after cloning packer.nvim
      -- Put this at the end after all plugins
      if packer_bootstrap then
