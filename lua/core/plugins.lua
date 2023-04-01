@@ -17,6 +17,7 @@ local ensure_packer = function()
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
+    -- mason
     use {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
