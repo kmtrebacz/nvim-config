@@ -13,7 +13,7 @@ local ensure_packer = function()
    
    return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'morhetz/gruvbox'
+    use 'sainnhe/edge'
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
@@ -30,6 +30,8 @@ local ensure_packer = function()
     use 'hrsh7th/cmp-path'
     use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/nvim-cmp'
+    --  snip
+    use 'L3MON4D3/LuaSnip'
 
      -- Automatically set up your configuration after cloning packer.nvim
      -- Put this at the end after all plugins
