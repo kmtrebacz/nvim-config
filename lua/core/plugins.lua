@@ -13,7 +13,7 @@ local ensure_packer = function()
    
    return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'sainnhe/edge'
+    use 'RRethy/nvim-base16'
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
@@ -24,7 +24,6 @@ local ensure_packer = function()
       "neovim/nvim-lspconfig",
     }
     -- completion
-    use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/cmp-path'
