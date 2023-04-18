@@ -31,6 +31,10 @@ local ensure_packer = function()
     use 'hrsh7th/nvim-cmp'
     --  snip
     use 'L3MON4D3/LuaSnip'
+    use 'saadparwaiz1/cmp_luasnip'
+    use 'rafamadriz/friendly-snippets'
+
+    use 'akinsho/toggleterm.nvim'
 
      -- Automatically set up your configuration after cloning packer.nvim
      -- Put this at the end after all plugins
