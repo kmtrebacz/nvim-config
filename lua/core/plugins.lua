@@ -17,6 +17,7 @@ local ensure_packer = function()
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
+    use 'akinsho/toggleterm.nvim'
     -- mason
     use {
       "williamboman/mason.nvim",
@@ -33,8 +34,12 @@ local ensure_packer = function()
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
     use 'rafamadriz/friendly-snippets'
-
-    use 'akinsho/toggleterm.nvim'
+    -- telescope
+    use {
+      'nvim-telescope/telescope.nvim',
+      'nvim-lua/plenary.nvim',
+      'BurntSushi/ripgrep',
+    }
 
      -- Automatically set up your configuration after cloning packer.nvim
      -- Put this at the end after all plugins
