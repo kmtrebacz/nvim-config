@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  gruvbox = {
+    loaded = true,
+    path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox",
+    url = "https://github.com/gruvbox-community/gruvbox"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
@@ -124,11 +129,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["nvim-base16"] = {
-    loaded = true,
-    path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-base16",
-    url = "https://github.com/RRethy/nvim-base16"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -143,11 +143,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
-    url = "https://github.com/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
