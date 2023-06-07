@@ -47,3 +47,9 @@ require("lspconfig").arduino_language_server.setup {
      on_attach =  on_attach,
      capabilities = capabilities,
 }
+
+-- php - intelephense
+require("lspconfig").intelephense.setup {
+     on_attach =  on_attach,
+     capabilities = capabilities,
+}
