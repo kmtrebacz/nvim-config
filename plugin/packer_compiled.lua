@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-cursorline"] = {
+    loaded = true,
+    path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cursorline",
+    url = "https://github.com/yamatsum/nvim-cursorline"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",

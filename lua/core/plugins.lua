@@ -18,6 +18,7 @@ local ensure_packer = function()
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
     use 'akinsho/toggleterm.nvim'
+    use 'yamatsum/nvim-cursorline'
     -- mason
     use {
       "williamboman/mason.nvim",
