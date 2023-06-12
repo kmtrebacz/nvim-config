@@ -45,12 +45,6 @@ local ensure_packer = function()
     use {
       'lewis6991/gitsigns.nvim',
     }
-    require('packer').startup(function()
-        use {
-          'stevearc/aerial.nvim',
-          config = function() require('aerial').setup() end
-        }
-    end)
 
      -- Automatically set up your configuration after cloning packer.nvim
      -- Put this at the end after all plugins
