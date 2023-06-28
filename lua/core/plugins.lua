@@ -21,6 +21,7 @@ local ensure_packer = function()
     use 'yamatsum/nvim-cursorline'
     use 'kevinhwang91/nvim-hlslens'
     use 'preservim/tagbar'
+    use 'lukas-reineke/indent-blankline.nvim'
     -- mason
     use {
       "williamboman/mason.nvim",
