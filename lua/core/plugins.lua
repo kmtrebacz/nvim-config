@@ -13,7 +13,7 @@ local ensure_packer = function()
    
    return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'tanvirtin/monokai.nvim'
+    use 'doums/darcula'
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
