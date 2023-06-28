@@ -1,0 +1,1 @@
+vim.keymap.set('n', '<c-m>', ':TagbarToggle<CR>')

@@ -1,5 +1,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '  
+vim.g.tagbar_ctags_bin = 'C:/ctags/ctags.exe'
 
 vim.opt.backspace = '2'
 vim.opt.showcmd = true
