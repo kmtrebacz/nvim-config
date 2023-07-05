@@ -13,7 +13,7 @@ local ensure_packer = function()
    
    return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'navarasu/onedark.nvim'
+    use 'gruvbox-community/gruvbox'
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
