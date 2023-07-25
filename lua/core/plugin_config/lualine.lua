@@ -1,7 +1,9 @@
 require('lualine').setup {
      options = {
           icons_enabled = true,
-          theme = auto,
+          theme = "zenburn",
+          component_separators = { left = '', right = ''},
+    	  section_separators = { left = '', right = ''},
      },
      sections = {
           lualine_a = {'mode'},
