@@ -30,7 +30,7 @@ cmp.setup({
   }),
   formatting = {
     format = function(_, vim_item)
-      vim_item.kind = vim_item.kind .. " [" .. (icons[vim_item.kind] or "Foo") .. "]"
+      vim_item.kind = "[" .. (icons[vim_item.kind] or "Foo") .. "] " .. vim_item.kind
       return vim_item
     end,
   },
