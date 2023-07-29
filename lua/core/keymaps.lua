@@ -23,4 +23,3 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 vim.opt.cursorline = true
-vim.cmd('highlight CursorLine cterm=NONE ctermbg=205 guibg=#383C4A')

@@ -34,4 +34,7 @@ cmp.setup({
       return vim_item
     end,
   },
+  experimental = {
+    ghost_text = true,
+  },
 })

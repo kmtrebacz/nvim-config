@@ -1,3 +1,2 @@
 vim.o.termguicolors = true
-vim.o.background = "dark"
-vim.cmd([[ colorscheme starrynight ]])
+vim.cmd([[ colorscheme one-nvim ]])

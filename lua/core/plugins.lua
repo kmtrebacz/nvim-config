@@ -13,7 +13,7 @@ local ensure_packer = function()
    
    return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'josegamez82/starrynight'
+    use 'Th3Whit3Wolf/one-nvim'
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
@@ -21,7 +21,6 @@ local ensure_packer = function()
     use 'yamatsum/nvim-cursorline'
     use 'kevinhwang91/nvim-hlslens'
     use 'preservim/tagbar'
-    use 'lukas-reineke/indent-blankline.nvim'
     -- mason
     use {
       "williamboman/mason.nvim",
@@ -44,9 +43,8 @@ local ensure_packer = function()
       'nvim-lua/plenary.nvim',
       'BurntSushi/ripgrep',
     }
-    use {
-      'lewis6991/gitsigns.nvim',
-    }
+    use 'lewis6991/gitsigns.nvim'
+    use 'glepnir/dashboard-nvim'
 
      -- Automatically set up your configuration after cloning packer.nvim
      -- Put this at the end after all plugins
