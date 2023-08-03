@@ -164,11 +164,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
-  ["one-nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\one-nvim",
-    url = "https://github.com/Th3Whit3Wolf/one-nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -183,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
+  },
+  sonokai = {
+    loaded = true,
+    path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\sonokai",
+    url = "https://github.com/sainnhe/sonokai"
   },
   tagbar = {
     loaded = true,
