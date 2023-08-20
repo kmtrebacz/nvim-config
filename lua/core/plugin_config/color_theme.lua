@@ -1,2 +1,3 @@
 vim.o.termguicolors = true
-vim.cmd([[ colorscheme sonokai ]])
+
+vim.cmd([[ colorscheme onedark ]])
