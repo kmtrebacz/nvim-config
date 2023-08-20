@@ -29,7 +29,7 @@ require('dashboard').setup({
            desc = 'File Browser',
            key = 's',
            keymap = 'CTRL n',
-           action = 'NvimTreeFindFileToggle'
+           action = 'Neotree'
          },
          {
           desc_hl = 'String',

@@ -14,7 +14,6 @@ local ensure_packer = function()
    return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'sainnhe/sonokai'
-    use 'nvim-tree/nvim-tree.lua'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
     use 'akinsho/toggleterm.nvim'
@@ -42,6 +41,16 @@ local ensure_packer = function()
       'nvim-telescope/telescope.nvim',
       'nvim-lua/plenary.nvim',
       'BurntSushi/ripgrep',
+    }
+    -- neotree
+    use {
+      "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        requires = { 
+          "nvim-lua/plenary.nvim",
+          "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+          "MunifTanjim/nui.nvim",
+        }
     }
     use 'lewis6991/gitsigns.nvim'
     use 'glepnir/dashboard-nvim'

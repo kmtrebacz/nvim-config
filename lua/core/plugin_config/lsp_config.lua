@@ -53,3 +53,9 @@ require("lspconfig").intelephense.setup {
      on_attach =  on_attach,
      capabilities = capabilities,
 }
+
+-- rust
+require("lspconfig").rust_analyzer.setup {
+     on_attach =  on_attach,
+     capabilities = capabilities,
+}
