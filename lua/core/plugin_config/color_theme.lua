@@ -1,7 +1,7 @@
 vim.o.termguicolors = true
 
 require('onedark').setup  {
-    style = 'warmer',
+    style = 'warm',
     transparent = false,
     term_colors = true,
     ending_tildes = false,
