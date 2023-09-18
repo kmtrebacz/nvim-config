@@ -1,4 +1,6 @@
-require('lualine').setup {
+local navic = require("nvim-navic")
+
+require('lualine').setup({
      options = {
           icons_enabled = true,
           theme = "onedark",
@@ -12,7 +14,7 @@ require('lualine').setup {
           lualine_x = {'fileformat', 'filetype'},
           lualine_y = {'progress'},
           lualine_z = {'location'}
-        },
+     },
      inactive_sections = {
           lualine_a = {},
           lualine_b = {},
@@ -21,4 +23,4 @@ require('lualine').setup {
           lualine_y = {},
           lualine_z = {}
      }
-}
+})

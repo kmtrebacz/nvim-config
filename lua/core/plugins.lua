@@ -20,6 +20,7 @@ local ensure_packer = function()
     use 'yamatsum/nvim-cursorline'
     use 'kevinhwang91/nvim-hlslens'
     use 'preservim/tagbar'
+    use 'SmiteshP/nvim-navic'
     -- mason
     use {
       "williamboman/mason.nvim",
