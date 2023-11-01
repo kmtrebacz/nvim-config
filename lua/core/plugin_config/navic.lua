@@ -28,12 +28,12 @@ require('nvim-navic').setup {
         TypeParameter = '  '
     },
     lsp = {
-        auto_attach = false,
+        auto_attach = true,
         preference = nil,
     },
     highlight = true,
     separator = " >",
-    depth_limit = 5,
+    depth_limit = 10,
     depth_limit_indicator = "..",
     safe_output = true,
     lazy_update_context = false,
