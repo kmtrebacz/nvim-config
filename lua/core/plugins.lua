@@ -51,6 +51,12 @@ local ensure_packer = function()
     }
     use 'lewis6991/gitsigns.nvim'
     use 'glepnir/dashboard-nvim'
+    -- noice
+    use {
+      "folke/noice.nvim",
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    }
 
      -- Automatically set up your configuration after cloning packer.nvim
      -- Put this at the end after all plugins
