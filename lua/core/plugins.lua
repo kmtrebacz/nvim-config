@@ -57,6 +57,7 @@ local ensure_packer = function()
       "MunifTanjim/nui.nvim",
       "rcarriga/nvim-notify",
     }
+    use "smjonas/inc-rename.nvim"
 
      -- Automatically set up your configuration after cloning packer.nvim
      -- Put this at the end after all plugins

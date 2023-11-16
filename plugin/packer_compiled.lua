@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["inc-rename.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\inc-rename.nvim",
+    url = "https://github.com/smjonas/inc-rename.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "C:\\Users\\kacpe\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind.nvim",
