@@ -5,8 +5,8 @@ require('nvim-cursorline').setup {
        number = false,
      },
      cursorword = {
-       enable = false,
-       min_length = 3,
+       enable = true,
+       min_length = 2,
        hl = { underline = true },
      }
 }
