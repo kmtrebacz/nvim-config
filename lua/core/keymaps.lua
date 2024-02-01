@@ -18,3 +18,11 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 vim.opt.cursorline = true
+
+vim.opt.list = true
+vim.opt.listchars = {
+     eol = ' ',
+     space = '·',
+     extends = '«',
+     precedes = '»',
+}
