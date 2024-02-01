@@ -13,7 +13,7 @@ local packer_bootstrap = ensure_packer()
    
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use "savq/melange-nvim"
+    use "NTBBloodbath/doom-one.nvim"
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
     use 'akinsho/toggleterm.nvim'
@@ -53,7 +53,6 @@ return require('packer').startup(function(use)
     -- noice
     use {
       "folke/noice.nvim",
-      "MunifTanjim/nui.nvim",
       "rcarriga/nvim-notify",
     }
     use "smjonas/inc-rename.nvim"
