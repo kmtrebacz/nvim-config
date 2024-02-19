@@ -21,11 +21,9 @@ return require('packer').startup(function(use)
     use 'kevinhwang91/nvim-hlslens'
     use 'SmiteshP/nvim-navic'
     -- mason
-    use {
-      "williamboman/mason.nvim",
-      "williamboman/mason-lspconfig.nvim",
-      "neovim/nvim-lspconfig",
-    }
+    use "williamboman/mason.nvim"
+    use  "williamboman/mason-lspconfig.nvim"
+    use "neovim/nvim-lspconfig"
     -- completion
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
@@ -38,23 +36,18 @@ return require('packer').startup(function(use)
     use 'saadparwaiz1/cmp_luasnip'
     use 'rafamadriz/friendly-snippets'
     -- telescope
-    use {
-      'nvim-telescope/telescope.nvim',
-      'nvim-lua/plenary.nvim',
-      'BurntSushi/ripgrep',
-    }
+    use 'nvim-telescope/telescope.nvim'
+    use 'nvim-lua/plenary.nvim'
+    use 'BurntSushi/ripgrep'
     -- neotree
-    use {
-      "nvim-neo-tree/neo-tree.nvim",
-      "MunifTanjim/nui.nvim",
-    }
+    use "nvim-neo-tree/neo-tree.nvim"
+    use "MunifTanjim/nui.nvim"
+
     use 'lewis6991/gitsigns.nvim'
     use 'glepnir/dashboard-nvim'
     -- noice
-    use {
-      "folke/noice.nvim",
-      "rcarriga/nvim-notify",
-    }
+    use "folke/noice.nvim"
+    use "rcarriga/nvim-notify"
     use "smjonas/inc-rename.nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
