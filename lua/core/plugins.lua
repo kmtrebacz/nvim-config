@@ -18,7 +18,6 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-web-devicons'
     use 'akinsho/toggleterm.nvim'
     use 'yamatsum/nvim-cursorline'
-    use 'kevinhwang91/nvim-hlslens'
     use 'SmiteshP/nvim-navic'
     -- mason
     use "williamboman/mason.nvim"

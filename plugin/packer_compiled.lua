@@ -119,11 +119,6 @@ _G.packer_plugins = {
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["inc-rename.nvim"] = {
-    loaded = true,
-    path = "/home/kt/.local/share/nvim/site/pack/packer/start/inc-rename.nvim",
-    url = "https://github.com/smjonas/inc-rename.nvim"
-  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -168,11 +163,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/nvim-cursorline",
     url = "https://github.com/yamatsum/nvim-cursorline"
-  },
-  ["nvim-hlslens"] = {
-    loaded = true,
-    path = "/home/kt/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
-    url = "https://github.com/kevinhwang91/nvim-hlslens"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
