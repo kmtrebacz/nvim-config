@@ -16,9 +16,6 @@ return require('packer').startup(function(use)
     use "sainnhe/sonokai"
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
-    use 'akinsho/toggleterm.nvim'
-    use 'yamatsum/nvim-cursorline'
-    use 'SmiteshP/nvim-navic'
     -- mason
     use "williamboman/mason.nvim"
     use  "williamboman/mason-lspconfig.nvim"
