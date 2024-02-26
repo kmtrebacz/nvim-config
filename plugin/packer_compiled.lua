@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
   },
+  ["nightcity.nvim"] = {
+    loaded = true,
+    path = "/home/kt/.local/share/nvim/site/pack/packer/start/nightcity.nvim",
+    url = "https://github.com/cryptomilk/nightcity.nvim"
+  },
   ["noice.nvim"] = {
     loaded = true,
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/noice.nvim",
@@ -193,11 +198,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
-  },
-  sonokai = {
-    loaded = true,
-    path = "/home/kt/.local/share/nvim/site/pack/packer/start/sonokai",
-    url = "https://github.com/sainnhe/sonokai"
   },
   tagbar = {
     loaded = true,
