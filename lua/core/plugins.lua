@@ -53,6 +53,8 @@ return require('packer').startup(function(use)
     use "folke/noice.nvim"
     use "rcarriga/nvim-notify"
 
+    use 'preservim/tagbar'
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then

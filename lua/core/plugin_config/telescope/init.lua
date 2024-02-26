@@ -1,18 +1,14 @@
-require("telescope").setup()
-
 local Layout = require("nui.layout")
-local Popup  = require("nui.popup")
+local Popup = require("nui.popup")
 
 local telescope = require("telescope")
-local TSLayout  = require("telescope.pickers.layout")
+local TSLayout = require("telescope.pickers.layout")
 
 local function make_popup(options)
      local popup = Popup(options)
-
      function popup.border:change_title(title)
           popup.border.set_text(popup.border, "top", title)
      end
-
      return TSLayout.Window(popup)
 end
 
@@ -23,11 +19,12 @@ telescope.setup({
                horizontal = {
                     size = {
                          width = "90%",
-                          height = "60%",
+                         height = "60%",
                     },
                },
                vertical = {
                     size = {
+                         width = "90%",
                          height = "90%",
                     },
                },
@@ -84,7 +81,7 @@ telescope.setup({
                          top_left = "┌",
                          top = "─",
                          top_right = "┐",
-                         righht = "│",
+                         right = "│",
                          bottom_right = "┘",
                          bottom = "─",
                          bottom_left = "└",
@@ -141,8 +138,10 @@ telescope.setup({
                     focusable = false,
                     border = {
                          style = border.preview,
-                         top = picker.preview_title,
-                         top_align = "center",
+                         text = {
+                              top = picker.preview_title,
+                              top_align = "center",
+                         },
                     },
                })
 
@@ -151,14 +150,14 @@ telescope.setup({
                          Layout.Box(preview, { grow = 1 }),
                          Layout.Box(results, { grow = 1 }),
                          Layout.Box(prompt, { size = 3 }),
-                    },{ dir = "col" }),
+                    }, { dir = "col" }),
                     horizontal = Layout.Box({
                          Layout.Box({
                               Layout.Box(results, { grow = 1 }),
                               Layout.Box(prompt, { size = 3 }),
                          }, { dir = "col", size = "50%" }),
                          Layout.Box(preview, { size = "50%" }),
-                         }, { dir = "row" }),
+                    }, { dir = "row" }),
                     minimal = Layout.Box({
                          Layout.Box(results, { grow = 1 }),
                          Layout.Box(prompt, { size = 3 }),
@@ -167,9 +166,9 @@ telescope.setup({
 
                local function get_box()
                     local strategy = picker.layout_strategy
-                    if strategy == "vertical" or strategy == "horizontal" then
-                         return box_by_kind[strategy], strategy
-                    end
+                         if strategy == "vertical" or strategy == "horizontal" then
+                              return box_by_kind[strategy], strategy
+                         end
 
                     local height, width = vim.o.lines, vim.o.columns
                     local box_kind = "horizontal"
@@ -207,21 +206,21 @@ telescope.setup({
                     position = "50%",
                     size = get_layout_size(box_kind),
                }, box)
-
                layout.picker = picker
-               prepare_layout_parts(layout, box_kind)
+                    prepare_layout_parts(layout, box_kind)
 
                local layout_update = layout.update
                function layout:update()
                     local box, box_kind = get_box()
                     prepare_layout_parts(layout, box_kind)
                     layout_update(self, { size = get_layout_size(box_kind) }, box)
-
-                    return TSLayout(layout)
                end
-          end
+
+               return TSLayout(layout)
+          end,
      },
 })
 
-vim.keymap.set('n', '<c-f>', ':Telescope find_files<CR>')
-vim.keymap.set('n', '<c-g>', ':Telescope live_grep<CR>')
+vim.api.nvim_set_keymap('n', '<C-T>f', ':Telescope find_files<CR>', { noremap = false })
+vim.api.nvim_set_keymap('n', '<C-T>g', ':Telescope live_grep<CR>', { noremap = false })
+vim.api.nvim_set_keymap('n', '<C-T>b', ':Telescope buffers<CR>', { noremap = false })
