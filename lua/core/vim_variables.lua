@@ -18,6 +18,7 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 vim.opt.cursorline = false
+vim.opt.guicursor = ""
 
 vim.opt.list = true
 vim.opt.listchars = {
