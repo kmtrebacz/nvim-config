@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/home/kt/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -143,11 +148,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
-  },
-  ["nightcity.nvim"] = {
-    loaded = true,
-    path = "/home/kt/.local/share/nvim/site/pack/packer/start/nightcity.nvim",
-    url = "https://github.com/cryptomilk/nightcity.nvim"
   },
   ["noice.nvim"] = {
     loaded = true,

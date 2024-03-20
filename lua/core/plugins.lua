@@ -13,7 +13,7 @@ local packer_bootstrap = ensure_packer()
    
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'cryptomilk/nightcity.nvim'
+    use 'ellisonleao/gruvbox.nvim'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-tree/nvim-web-devicons'
     -- mason
