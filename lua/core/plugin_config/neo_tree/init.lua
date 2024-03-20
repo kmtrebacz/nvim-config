@@ -110,4 +110,4 @@ require("neo-tree").setup({
      },
 })
 
-vim.keymap.set('n', '<c-n>', ':Neotree<CR>')
+require('core.plugin_config.neo_tree.keybinds')
