@@ -14,7 +14,7 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'ellisonleao/gruvbox.nvim'
-    use 'nvim-lualine/lualine.nvim'
+    use 'eduardo-antunes/plainline'
     use 'nvim-tree/nvim-web-devicons'
     -- mason
     use "williamboman/mason.nvim"
