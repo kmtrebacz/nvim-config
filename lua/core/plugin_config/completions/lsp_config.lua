@@ -25,6 +25,11 @@ require("lspconfig").vtsls.setup {
      capabilities = capabilities,
 }
 
+-- css
+require("lspconfig").css_lsp.setup {
+     capabilities = capabilities,
+}
+
 -- python
 require("lspconfig").pylsp.setup {
      capabilities = capabilities,
