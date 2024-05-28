@@ -48,7 +48,6 @@ return require('packer').startup(function(use)
     use "MunifTanjim/nui.nvim"
 
     use 'lewis6991/gitsigns.nvim'
-    use 'glepnir/dashboard-nvim'
     -- noice
     use "folke/noice.nvim"
     use "rcarriga/nvim-notify"
