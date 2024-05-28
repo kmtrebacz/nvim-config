@@ -31,7 +31,7 @@ require("lspconfig").css_lsp.setup {
 }
 
 -- python
-require("lspconfig").pylsp.setup {
+require("lspconfig").pyright.setup {
      capabilities = capabilities,
 }
 
@@ -52,5 +52,5 @@ require("lspconfig").intelephense.setup {
 
 -- rust
 require("lspconfig").rust_analyzer.setup {
-    capabilities = capabilities,
+     capabilities = capabilities,
 }

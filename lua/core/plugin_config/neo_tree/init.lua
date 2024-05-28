@@ -105,7 +105,7 @@ require("neo-tree").setup({
           use_libuv_file_watcher = false,
      },
      source_selector = {
-          winbar     = true,
+          winbar     = false,
           statusline = false
      },
 })
