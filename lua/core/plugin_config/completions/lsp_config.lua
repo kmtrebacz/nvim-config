@@ -11,37 +11,15 @@ end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+-- FOR NVIM CONFIG
+-- lua
 require("lspconfig").lua_ls.setup {
      capabilities = capabilities,
 }
 
--- html
-require("lspconfig").html.setup {
-     capabilities = capabilities,
-}
-
+-- WEB
 -- js 
 require("lspconfig").vtsls.setup {
-     capabilities = capabilities,
-}
-
--- css
-require("lspconfig").css_lsp.setup {
-     capabilities = capabilities,
-}
-
--- python
-require("lspconfig").pyright.setup {
-     capabilities = capabilities,
-}
-
--- c++
-require("lspconfig").clangd.setup {
-     capabilities = capabilities,
-}
-
--- arduino_language_server
-require("lspconfig").arduino_language_server.setup {
      capabilities = capabilities,
 }
 
@@ -49,6 +27,13 @@ require("lspconfig").arduino_language_server.setup {
 require("lspconfig").intelephense.setup {
      capabilities = capabilities,
 }
+
+-- LOW LEVEL
+-- c++
+require("lspconfig").clangd.setup {
+     capabilities = capabilities,
+}
+
 
 -- rust
 require("lspconfig").rust_analyzer.setup {
