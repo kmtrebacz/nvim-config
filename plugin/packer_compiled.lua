@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["godot.nvim"] = {
-    loaded = true,
-    path = "/home/kt/.local/share/nvim/site/pack/packer/start/godot.nvim",
-    url = "https://github.com/Lommix/godot.nvim"
-  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
@@ -139,16 +134,6 @@ _G.packer_plugins = {
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["neo-tree.nvim"] = {
-    loaded = true,
-    path = "/home/kt/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
-    url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
-  },
-  ["noice.nvim"] = {
-    loaded = true,
-    path = "/home/kt/.local/share/nvim/site/pack/packer/start/noice.nvim",
-    url = "https://github.com/folke/noice.nvim"
-  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/nui.nvim",
@@ -164,11 +149,6 @@ _G.packer_plugins = {
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-notify"] = {
-    loaded = true,
-    path = "/home/kt/.local/share/nvim/site/pack/packer/start/nvim-notify",
-    url = "https://github.com/rcarriga/nvim-notify"
-  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -178,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["oil.nvim"] = {
+    loaded = true,
+    path = "/home/kt/.local/share/nvim/site/pack/packer/start/oil.nvim",
+    url = "https://github.com/stevearc/oil.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -198,11 +183,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kt/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
-  },
-  tagbar = {
-    loaded = true,
-    path = "/home/kt/.local/share/nvim/site/pack/packer/start/tagbar",
-    url = "https://github.com/preservim/tagbar"
   },
   ["telescope.nvim"] = {
     loaded = true,

@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
     use 'ellisonleao/gruvbox.nvim'
     use 'eduardo-antunes/plainline'
     use 'nvim-tree/nvim-web-devicons'
+    use 'lewis6991/gitsigns.nvim'
     -- mason
     use "williamboman/mason.nvim"
     use  "williamboman/mason-lspconfig.nvim"
@@ -43,16 +44,9 @@ return require('packer').startup(function(use)
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-lua/plenary.nvim'
     use 'BurntSushi/ripgrep'
-    -- neotree
-    use "nvim-neo-tree/neo-tree.nvim"
-    use "MunifTanjim/nui.nvim"
-
-    use 'lewis6991/gitsigns.nvim'
-    -- noice
-    use "folke/noice.nvim"
-    use "rcarriga/nvim-notify"
-
-    use 'preservim/tagbar'
+    use 'MunifTanjim/nui.nvim'
+    -- oil
+    use "stevearc/oil.nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
