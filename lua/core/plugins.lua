@@ -45,8 +45,8 @@ return require('packer').startup(function(use)
     use 'nvim-lua/plenary.nvim'
     use 'BurntSushi/ripgrep'
     use 'MunifTanjim/nui.nvim'
-    -- oil
     use "stevearc/oil.nvim"
+    use "nvimdev/dashboard-nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
