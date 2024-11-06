@@ -1,5 +1,4 @@
 local lualine = require('lualine')
-local theme   = require('gruvbox')
 
 local colors = {
      bg       = '#3c3836',
