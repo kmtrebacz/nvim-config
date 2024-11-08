@@ -48,6 +48,7 @@ return require('packer').startup(function(use)
     use "stevearc/oil.nvim"
     use "nvimdev/dashboard-nvim"
     use "ThePrimeagen/vim-be-good"
+    use "j-hui/fidget.nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

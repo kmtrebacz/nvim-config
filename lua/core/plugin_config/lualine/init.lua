@@ -27,9 +27,9 @@ local config = {
           always_divide_middle = true,
           globalstatus = true,
           refresh = {
-               statusline = 1000,
-               tabline = 1000,
-               winbar = 1000,
+               statusline = 1,
+               tabline = 1,
+               winbar = 1,
           },
           theme = {
                normal = { c = { fg = colors.fg, bg = colors.bg } },
