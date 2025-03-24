@@ -19,11 +19,3 @@ vim.wo.relativenumber = true
 
 vim.opt.cursorline = false
 vim.opt.guicursor = ""
-
-vim.opt.list = true
-vim.opt.listchars = {
-     eol = ' ',
-     space = '·',
-     extends = '«',
-     precedes = '»',
-}

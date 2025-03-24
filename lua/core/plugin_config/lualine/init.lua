@@ -31,10 +31,6 @@ local config = {
                tabline = 1,
                winbar = 1,
           },
-          theme = {
-               normal = { c = { fg = colors.fg, bg = colors.bg } },
-               inactive = { c = { fg = colors.fg, bg = colors.bg } },
-          }
      },
      sections = {
           lualine_a = {},
@@ -72,54 +68,33 @@ local conditions = {
      end,
 }
 
-local function ins_left(component)
+local function ins_b(component)
+     table.insert(config.sections.lualine_b, component)
+end
+
+local function ins_c(component)
      table.insert(config.sections.lualine_c, component)
 end
 
-local function ins_right(component)
+local function ins_y(component)
+     table.insert(config.sections.lualine_y, component)
+end
+
+local function ins_x(component)
      table.insert(config.sections.lualine_x, component)
 end
 
 
-ins_left { 
-     'mode',
-     color = function()
-          local mode_color = {
-               n = colors.red,
-               i = colors.green,
-               v = colors.blue,
-               [''] = colors.blue,
-               V = colors.blue,
-               c = colors.magenta,
-               no = colors.red,
-               s = colors.orange,
-               S = colors.orange,
-               [''] = colors.orange,
-               ic = colors.yellow,
-               R = colors.violet,
-               Rv = colors.violet,
-               cv = colors.red,
-               ce = colors.red,
-               r = colors.cyan,
-               rm = colors.cyan,
-               ['r?'] = colors.cyan,
-               ['!'] = colors.red,
-               t = colors.red,
-          }
-          return { fg = mode_color[vim.fn.mode()] }
-     end,
+ins_b {
+  'filesize',
+  cond = conditions.buffer_not_empty,
 }
 
-ins_left {
-     'filename',
-     cond = conditions.buffer_not_empty,
-}
+ins_b { 'location' }
 
-ins_left { 'location' }
+ins_b { 'progress' }
 
-ins_left { 'progress' }
-
-ins_left {
+ins_b {
      'diagnostics',
      sources = { 'nvim_diagnostic' },
      symbols = { error = ' ', warn = ' ', info = ' ' },
@@ -130,16 +105,21 @@ ins_left {
      },
 }
 
-ins_right {
-     'o:encoding',
-     fmt = string.upper,
-     cond = conditions.hide_in_width,
+ins_c {
+     function()
+          return '%='
+     end,
 }
 
-ins_right {
-     'fileformat',
-     fmt = string.upper,
-     icons_enabled = false,
+ins_c {
+     'filename',
+     cond = conditions.buffer_not_empty,
+}
+
+ins_y {
+     'branch',
+     symbols = ' ',
+     color = { gui = 'bold' }
 }
 
 local function diff_source()
@@ -153,7 +133,7 @@ local function diff_source()
   end
 end
 
-ins_right {
+ins_y {
      'diff',
      symbols = { added = ' ', modified = '󰝤 ', removed = ' ' },
      diff_color = {
@@ -165,11 +145,16 @@ ins_right {
      source = diff_source,
 }
 
-ins_right {
-     'branch',
-     symbols = ' ',
-     color = { gui = 'bold' }
+ins_y {
+     'o:encoding',
+     fmt = string.upper,
+     cond = conditions.hide_in_width,
 }
 
+ins_y {
+     'fileformat',
+     fmt = string.upper,
+     icons_enabled = false,
+}
 
 lualine.setup(config)
