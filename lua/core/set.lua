@@ -19,3 +19,5 @@ vim.wo.relativenumber = true
 
 vim.opt.cursorline = false
 vim.opt.guicursor = ""
+
+vim.cmd("set colorcolumn=100")
