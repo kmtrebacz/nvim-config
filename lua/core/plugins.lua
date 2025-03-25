@@ -50,6 +50,7 @@ return require('packer').startup(function(use)
     use "ThePrimeagen/vim-be-good"
     use "j-hui/fidget.nvim"
     use "Bekaboo/deadcolumn.nvim"
+    use "stevearc/aerial.nvim"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
